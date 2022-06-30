@@ -11,7 +11,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      buttonColor: "00FFFFFF",
+      color: "00FFFFFF",
       error: null,
       isLoaded: false,
       items: [],
@@ -45,11 +45,13 @@ class App extends React.Component {
   getQuotes = (quotes, number) => {
     let randomColor = Math.floor(Math.random() * 16777215).toString(16);
     let newColor = "#" + randomColor;
+
     document.body.style.background = newColor;
+
     let randomQuote = Math.floor(Math.random() * number);
 
     this.setState({
-      buttonColor: newColor,
+      color: newColor,
       quote: quotes[randomQuote].text,
       author: quotes[randomQuote].author,
     });
@@ -86,7 +88,7 @@ class App extends React.Component {
             id="new-quote"
             className="float-end"
             onClick={() => this.getQuotes(items, numQuotes)}
-            style={{ background: this.state.buttonColor }}
+            style={{ background: this.state.color }}
           >
             Next Quote
           </Button>

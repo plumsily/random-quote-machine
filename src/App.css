@@ -1,21 +1,21 @@
 body {
-  /* background-color: lightblue; */
   font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  transition: background-color 400ms ease-in;
+  transition: background-color 300ms ease-in;
 }
 
 .blockquote {
-  transition: opacity 400ms ease-in;
+  opacity: 1;
+  transition: opacity 300ms ease-in;
 }
 
 #new-quote {
   border-color: transparent;
   background-color: transparent;
-  transition: background-color 400ms ease-in;
+  transition: background-color 300ms ease-in;
 }
 #new-quote:focus {
   box-shadow: none !important;
