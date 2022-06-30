@@ -49,11 +49,13 @@ class App extends React.Component {
     document.body.style.background = newColor;
 
     let randomQuote = Math.floor(Math.random() * number);
+    let newQuote = quotes[randomQuote].text;
+    let newAuthor = quotes[randomQuote].author;
 
     this.setState({
       color: newColor,
-      quote: quotes[randomQuote].text,
-      author: quotes[randomQuote].author,
+      quote: newQuote,
+      author: newAuthor !== null ? newAuthor : "unknown",
     });
   };
 
