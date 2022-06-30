@@ -11,7 +11,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      buttonColor: "lightblue",
+      buttonColor: "00FFFFFF",
       error: null,
       isLoaded: false,
       items: [],
@@ -65,7 +65,6 @@ class App extends React.Component {
         id="quote-box"
         className="shadow  px-2 py-2"
       >
-        {/* <Card.Header className="text-center">Quote of the day</Card.Header> */}
         <Card.Body>
           <figure>
             <blockquote className="blockquote mb-3">
@@ -77,8 +76,9 @@ class App extends React.Component {
           </figure>
           <a
             id="tweet-quote"
-            href="twitter.com/intent/tweet"
+            href="https://twitter.com/intent/tweet?hashtags=quotes"
             className="btn btn-info"
+            target="_blank"
           >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
