@@ -67,7 +67,7 @@ class App extends React.Component {
       <Card
         style={{ width: "500px" }}
         id="quote-box"
-        className="shadow  px-2 py-2"
+        className="shadow-lg  px-2 py-2"
       >
         <Card.Body>
           <figure>
@@ -80,8 +80,9 @@ class App extends React.Component {
           </figure>
           <a
             id="tweet-quote"
-            href="https://twitter.com/intent/tweet?hashtags=quotes"
+            href={`https://twitter.com/intent/tweet?hashtags=quotes&text="${this.state.quote}"%20by%20${this.state.author}`}
             className="btn btn-info"
+            rel="noreferrer"
             target="_blank"
           >
             <FontAwesomeIcon icon={faTwitter} />
