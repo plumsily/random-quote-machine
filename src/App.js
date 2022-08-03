@@ -44,57 +44,52 @@ const App = () => {
     });
   }, []);
 
-  // useEffect(() => {
-  //   fetch("https://type.fit/api/quotes")
-  //     .then((res) => res.json())
-  //     .then(
-  //       (result) => {
-  //         setIsLoaded(true);
-  //         setItems(result);
-  //         setNumQuotes(result.length);
-  //         getQuotes(result, result.length);
-  //       },
-  //       (error) => {
-  //         setIsLoaded(true);
-  //         setError(error);
-  //       }
-  //     );
-  // }, []);
+  useEffect(() => {
+    //timeout effect?
+  });
 
   return (
-    <Card
-      style={{ width: "500px" }}
-      id="quote-box"
-      className="shadow-lg  px-2 py-2"
-    >
-      <Card.Body>
-        <figure>
-          <blockquote className="blockquote mb-3">
-            <p id="text">{quote}</p>
-          </blockquote>
-          <figcaption className="blockquote-footer text-end mb-5">
-            by <cite id="author">{author}</cite>
-          </figcaption>
-        </figure>
-        <a
-          id="tweet-quote"
-          href={`https://twitter.com/intent/tweet?hashtags=quotes&text="${quote}"%20by%20${author}`}
-          className="btn btn-info"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <FontAwesomeIcon icon={faTwitter} />
-        </a>
-        <Button
-          id="new-quote"
-          className="float-end"
-          onClick={() => getQuotes(items, numQuotes)}
-          style={{ background: color }}
-        >
-          Next Quote
-        </Button>
-      </Card.Body>
-    </Card>
+    <div className="flex h-screen justify-center items-center">
+      <div className="w-screen mx-auto flex flex-column items-center">
+        <div className="text-7xl font-semibold text-white/60 mb-5">
+          "Here is the quote!"
+        </div>
+        <div className="text-2xl font-medium text-white/60">by Justin Lee</div>
+      </div>
+    </div>
+    // <Card
+    //   style={{ width: "500px" }}
+    //   id="quote-box"
+    //   className="shadow-lg  px-2 py-2"
+    // >
+    //   <Card.Body>
+    //     <figure>
+    //       <blockquote className="blockquote mb-3">
+    //         <p id="text">{quote}</p>
+    //       </blockquote>
+    //       <figcaption className="blockquote-footer text-end mb-5">
+    //         by <cite id="author">{author}</cite>
+    //       </figcaption>
+    //     </figure>
+    //     <a
+    //       id="tweet-quote"
+    //       href={`https://twitter.com/intent/tweet?hashtags=quotes&text="${quote}"%20by%20${author}`}
+    //       className="btn btn-info"
+    //       rel="noreferrer"
+    //       target="_blank"
+    //     >
+    //       <FontAwesomeIcon icon={faTwitter} />
+    //     </a>
+    //     <Button
+    //       id="new-quote"
+    //       className="float-end"
+    //       onClick={() => getQuotes(items, numQuotes)}
+    //       style={{ background: color }}
+    //     >
+    //       Next Quote
+    //     </Button>
+    //   </Card.Body>
+    // </Card>
   );
 };
 

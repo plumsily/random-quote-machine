@@ -1,13 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
 body {
-  font-weight: 400;
+  font-family: Poppins;
+  /* font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; */
   transition: background-color 300ms ease-in;
 }
 
-.blockquote {
+/* .blockquote {
   opacity: 1;
   transition: opacity 300ms ease-in;
 }
@@ -19,4 +22,4 @@ body {
 }
 #new-quote:focus {
   box-shadow: none !important;
-}
+} */
