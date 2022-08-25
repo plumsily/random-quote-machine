@@ -1,25 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 body {
-  font-family: Poppins;
-  /* font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; */
-  transition: background-color 300ms ease-in;
+  font-family: Poppins,"Roboto",sans-serif;
 }
 
-/* .blockquote {
-  opacity: 1;
-  transition: opacity 300ms ease-in;
+button,a {
+  transition: all 300ms ease;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
+button:hover, a:hover {
+  background: #60a5fa;
+  box-shadow: 0px 15px 20px rgba(96, 165, 250, 0.5);
+  color: white;
+  transform: translateY(-7px);
 
-#new-quote {
-  border-color: transparent;
-  background-color: transparent;
-  transition: background-color 300ms ease-in;
 }
-#new-quote:focus {
-  box-shadow: none !important;
-} */
