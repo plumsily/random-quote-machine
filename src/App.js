@@ -43,15 +43,20 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="flex justify-center">
       <Background color={color} isShowing={isShowing} />
       <Content
         data={data}
-        setData={setData}
         color={color}
         isShowing={isShowing}
         clickTransition={clickTransition}
       />
+      <div className="footer absolute bottom-12 text-xs text-gray-500">
+        by{" "}
+        <a className="link" href="https://github.com/plumsily">
+          plumsily
+        </a>
+      </div>
     </div>
   );
 };

@@ -5,11 +5,15 @@ import "./Content.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-const Content = ({ data, setData, color, isShowing, clickTransition }) => {
+const Content = ({ data, color, isShowing, clickTransition }) => {
   return (
-    <div className="flex h-screen justify-center items-center absolute top-0 left-0">
+    <div
+      id="quote-box"
+      className="flex h-screen w-11/12 absolute justify-center items-center"
+    >
       <div className="w-screen px-40 mx-auto flex flex-column items-center">
         <Transition
+          id="text"
           appear={true}
           show={isShowing}
           enter="transition-opacity duration-500 ease-in"
@@ -24,6 +28,7 @@ const Content = ({ data, setData, color, isShowing, clickTransition }) => {
           "{data.content}"
         </Transition>
         <Transition
+          id="author"
           appear={true}
           show={isShowing}
           enter="transition-opacity duration-700 ease-in"
@@ -38,7 +43,7 @@ const Content = ({ data, setData, color, isShowing, clickTransition }) => {
           - {data.author}
         </Transition>
       </div>
-      <div className="absolute bottom-20">
+      <div className="absolute bottom-24">
         <Transition
           appear={true}
           show={isShowing}
@@ -61,6 +66,7 @@ const Content = ({ data, setData, color, isShowing, clickTransition }) => {
             <FontAwesomeIcon icon={faTwitter} />
           </a>
           <button
+            id="new-quote"
             onClick={() => {
               clickTransition();
             }}

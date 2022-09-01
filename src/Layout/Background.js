@@ -17,7 +17,7 @@ const Background = ({ color, isShowing }) => {
               show={isShowing}
               enter="transition-opacity duration-700 ease-in"
               enterFrom="opacity-0"
-              enterTo="opacity-60"
+              enterTo="opacity-50"
               leave="transition-opacity duration-500 ease-out"
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
@@ -31,7 +31,7 @@ const Background = ({ color, isShowing }) => {
               show={isShowing}
               enter="transition-opacity duration-700 ease-in"
               enterFrom="opacity-0"
-              enterTo="opacity-60"
+              enterTo="opacity-50"
               leave="transition-opacity duration-500 ease-out"
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
@@ -45,7 +45,7 @@ const Background = ({ color, isShowing }) => {
               show={isShowing}
               enter="transition-opacity duration-700 ease-in"
               enterFrom="opacity-0"
-              enterTo="opacity-40"
+              enterTo="opacity-50"
               leave="transition-opacity duration-500 ease-out"
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
