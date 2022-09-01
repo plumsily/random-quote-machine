@@ -16,7 +16,7 @@ const Content = ({ data, color, isShowing, clickTransition }) => {
           id="text"
           appear={true}
           show={isShowing}
-          enter="transition-opacity duration-500 ease-in"
+          enter="transition-opacity duration-700 ease-in"
           enterFrom="opacity-0"
           enterTo="opacity-100"
           leave="transition-opacity duration-500 ease-out"

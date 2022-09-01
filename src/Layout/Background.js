@@ -8,7 +8,7 @@ const Background = ({ color, isShowing }) => {
     filter: "hue-rotate(60deg)",
   };
   return (
-    <div className="background-container">
+    <div key={color} className="background-container">
       <div className="circle-background">
         <div className="circle-box">
           <div className="circle-container circle1">
