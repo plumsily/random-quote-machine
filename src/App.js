@@ -28,8 +28,16 @@ const App = () => {
     updateQuote();
   }, []);
 
+  // useEffect(() => {
+  //   setColor("#" + Math.floor(Math.random() * 16777215).toString(16));
+  // }, [data]);
+
   useEffect(() => {
     setColor("#" + Math.floor(Math.random() * 16777215).toString(16));
+    const timer = setTimeout(() => {
+      clickTransition();
+    }, 72000);
+    return () => clearTimeout(timer);
   }, [data]);
 
   const clickTransition = () => {

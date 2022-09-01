@@ -70,9 +70,10 @@ const Content = ({ data, color, isShowing, clickTransition }) => {
             onClick={() => {
               clickTransition();
             }}
-            className="w-32 h-10 rounded-xl font-medium"
+            className="relative w-32 h-10 rounded-xl font-medium"
           >
-            Next Quote
+            <span className="button-text">Next Quote</span>
+            <div className="loading-bar absolute top-0 h-full w-32 r-0 rounded-xl"></div>
           </button>
         </Transition>
       </div>
