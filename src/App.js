@@ -43,7 +43,7 @@ const App = () => {
     }, 600);
     setTimeout(() => {
       setIsShowing(true);
-    }, 700);
+    }, 900);
   };
 
   return (
