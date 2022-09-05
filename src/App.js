@@ -61,7 +61,7 @@ const App = () => {
     setColor("#" + Math.floor(Math.random() * 16777215).toString(16));
     const timer = setTimeout(() => {
       clickTransition();
-    }, 72000);
+    }, 39400);
     return () => clearTimeout(timer);
   }, [data]);
 
