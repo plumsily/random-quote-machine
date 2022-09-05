@@ -8,6 +8,7 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 const Content = ({ data, color, isShowing, clickTransition }) => {
   return (
     <div
+      key={color}
       id="quote-box"
       className="flex h-screen w-11/12 absolute justify-center items-center"
     >

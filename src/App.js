@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Background from "./Layout/Background";
 import Content from "./Layout/Content";
@@ -28,9 +28,6 @@ const App = () => {
     }
   };
 
-  let updateTimer = useRef(null);
-  let appearTimer = useRef(null);
-
   useEffect(() => {
     updateQuote();
     const handleBlur = () => {
@@ -45,8 +42,6 @@ const App = () => {
     return () => {
       window.removeEventListener("blur", handleBlur);
       window.removeEventListener("focus", handleFocus);
-      clearTimeout(updateTimer);
-      clearTimeout(appearTimer);
     };
   }, []);
 
@@ -67,12 +62,16 @@ const App = () => {
 
   const clickTransition = () => {
     setIsShowing(false);
-    updateTimer.current = setTimeout(() => {
+    const updateTimer = setTimeout(() => {
       updateQuote();
     }, 600);
-    appearTimer.current = setTimeout(() => {
+    const appearTimer = setTimeout(() => {
       setIsShowing(true);
     }, 700);
+    return () => {
+      clearTimeout(updateTimer);
+      clearTimeout(appearTimer);
+    };
   };
 
   return (
