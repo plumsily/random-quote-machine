@@ -10,7 +10,7 @@ const Content = ({ data, color, isShowing, clickTransition }) => {
     <div
       key={color}
       id="quote-box"
-      className="flex h-screen w-11/12 absolute justify-center items-center"
+      className="flex h-screen w-11/12 absolute justify-center items-center bg-transparent"
     >
       <div className="w-screen px-40 mx-auto flex flex-column items-center">
         <Transition

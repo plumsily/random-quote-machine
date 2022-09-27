@@ -56,7 +56,7 @@ const App = () => {
     setColor("#" + Math.floor(Math.random() * 16777215).toString(16));
     const timer = setTimeout(() => {
       clickTransition();
-    }, 39400);
+    }, 29400);
     return () => clearTimeout(timer);
   }, [data]);
 
@@ -75,7 +75,7 @@ const App = () => {
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center relative overflow-hidden">
       <Background color={color} isShowing={isShowing} />
       <Content
         data={data}

@@ -1,4 +1,4 @@
-.background-container{
+/* .background-container{
     display: grid;
     grid-template-columns: 10vw 80vw 10vw;
     grid-template-rows: 100vh;
@@ -75,4 +75,34 @@
       transform: translate(0, 400%) scale(4);
       filter: hue-rotate(-60deg);
     }
-  }
+  } */
+
+.stars1 {
+    height: 45vw;
+    width: 45vw;
+    animation: stars1 30s linear infinite
+}
+
+
+@keyframes stars1 {
+    from {
+        transform: translateY(0px) scale(1)
+    }
+    to{
+        transform: translateY(-1000px) scale(1.2)
+    }
+}
+.stars2 {
+    height: 25vw;
+    width: 25vw;
+    animation: stars2 30s linear infinite
+}
+
+@keyframes stars2 {
+    from {
+        transform: scale(1)
+    }
+    to{
+        transform: translateY(-2000px) scale(1.5);
+    }
+}
