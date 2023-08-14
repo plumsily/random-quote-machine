@@ -1,4 +1,4 @@
-This is a React app that explores building out the frontend components for a random quote generator. The user can update the page with new quotes and choose to tweet the quote as well.
+This is a React app that explores building out the frontend components for a random quote generator. The user can update the page with new quotes and choose to tweet the quote as well. Background animations and colors are dynamically chosen for each quote.
 
 Check out the demo <a href="https://plumsily.github.io/random-quote-machine/">here</a>!
 
